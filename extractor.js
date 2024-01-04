@@ -23,7 +23,7 @@ function unixTimestampToHumanDate(timestamp) {
   const ampm = dateObject.getHours() >= 12 ? 'PM' : 'AM';
   
   // Format the date to a human-readable string in 12-hour format
-  const humanDateFormat = `${dateObject.toDateString()} ${hours12}:${minutes < 10 ? '0' : ''}${minutes} ${ampm} (Indian Standard Time)`;
+  const humanDateFormat = `${dateObject.toDateString()} ${hours12}:${minutes < 10 ? '0' : ''}${minutes} ${ampm} (Indian1 Standard Time)`;
   
   return humanDateFormat;
 }
