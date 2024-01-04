@@ -15,7 +15,9 @@ function extractUnixTimestamp(postId) {
 
 function unixTimestampToHumanDate(timestamp) {
   const dateObject = new Date(timestamp);
-  const humanDateFormat = dateObject.toUTCString()+" (UTC)";
+  dateObject.setUTCHours(dateObject.getUTCHours() + 5);
+  dateObject.setUTCMinutes(dateObject.getUTCMinutes() + 30);
+  const humanDateFormat = dateObject.toUTCString()+" (Indian Standard Time)";
   return humanDateFormat;
 }
 
